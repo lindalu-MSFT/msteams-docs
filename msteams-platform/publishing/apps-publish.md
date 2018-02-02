@@ -8,10 +8,10 @@ ms.date: 01/31/2018
 # Publish your Microsoft Teams app to AppSource
 
 > [!IMPORTANT]
-> **Your Microsoft Teams app *must* use the [latest schema](~/resources/schema/manifest-schema) and follow [current packaging guidelines](~/concepts/apps/apps-package).**
+> **Your Microsoft Teams app *must* use the [latest schema](~/msteams-platform/resources/schema/manifest-schema.md) and follow [current packaging guidelines](~/msteams-platform/concepts/apps/apps-package.md).**
 >
 > [!NOTE]
-> Teams will soon provide an in-app gallery for users to find or discover [high-quality Teams apps](~/resources/design/overview). To have your solution available in this gallery, you must publish your solution through AppSource.
+> Teams will soon provide an in-app gallery for users to find or discover [high-quality Teams apps](~/msteams-platform/resources/design/overview.md). To have your solution available in this gallery, you must publish your solution through AppSource.
 
 AppSource (formerly Office Store) provides a convenient location for you to distribute your Microsoft Teams app, as well as other Office 365 extensibility types such as Office add-ins and Sharepoint add-ins. To include your solution in AppSource, you submit it to the Seller Dashboard. You need to create an individual or company account if you have not already done so for other Windows apps or Office extensibility types.
 
@@ -49,12 +49,12 @@ After your account is approved, you can submit your solution to the [Seller Dash
 
 ![Office Store Seller Dashboard add an app](~/assets/images/submission/sellerdashboardaddapp.png)
 
-You need to upload a [submission package](~/concepts/apps/apps-package) and provide the required metadata for the product listing page, including information such as app logo, description, and screenshots. Please review our [Submission and Manifest Metadata Checklist](~/publishing/office-store-checklist) for more information.
+You need to upload a [submission package](~/msteams-platform/concepts/apps/apps-package.md) and provide the required metadata for the product listing page, including information such as app logo, description, and screenshots. Please review our [Submission and Manifest Metadata Checklist](~/msteams-platform/publishing/office-store-checklist.md) for more information.
 
 > [!IMPORTANT]
 > All information in the package manifest must match the metadata information you enter into the product listing.
 
-For general information about the Seller Dashboard, see [Use the Seller Dashboard to submit your solution to AppSource](https://dev.office.com/officestore/docs/use-the-seller-dashboard-to-submit-to-the-office-store). For Teams-specific help, see [Submitting your Microsoft Teams app in the Seller Dashboard](~/publishing/office-store-guidance).
+For general information about the Seller Dashboard, see [Use the Seller Dashboard to submit your solution to AppSource](https://dev.office.com/officestore/docs/use-the-seller-dashboard-to-submit-to-the-office-store). For Teams-specific help, see [Submitting your Microsoft Teams app in the Seller Dashboard](~/msteams-platform/publishing/office-store-guidance.md).
 
 ## Microsoft Teams app approval process
 
@@ -87,7 +87,7 @@ Failures are explained, with references to the specific policy violations. All f
 * If your product requires an account on your service or another service, list that in the description.
 * If your product requires additional purchases to function properly, list that in the description.
 * For your Tab configuration page, be sure to provide "About" links and proper guidance—this page is the first thing the user sees, so ensure that a new user understands what to do.
-* Be sure that your bot provides appropriate responses when mentioned (@*botname*) in a channel and in 1:1 conversations as needed. If your bot does not provide meaningful context within the personal or teams scope, disable that scope via the manifest. (See the `bots` block in the [Microsoft Teams manifest schema reference](~/resources/schema/manifest-schema#bots).)
+* Be sure that your bot provides appropriate responses when mentioned (@*botname*) in a channel and in 1:1 conversations as needed. If your bot does not provide meaningful context within the personal or teams scope, disable that scope via the manifest. (See the `bots` block in the [Microsoft Teams manifest schema reference](~/msteams-platform/resources/schema/manifest-schema#bots.md).)
 * Provide the requisite Terms and Privacy policy links in the manifest and the Seller Dashboard, and verify that they properly resolve to the correct documentation. For bots, you must provide this same information in the Submission section of the Bot Framework registration page.
 * Ensure that metadata in the manifest roughly matches metadata in the Seller Dashboard (and, for bots, in the Bot Framework registration). Note that your Seller Dashboard entry should contain a more detailed and formatted description for use in the AppSource product page.
 * Check your manifest for completeness and accuracy. Then check it again.
